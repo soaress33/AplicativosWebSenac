@@ -33,8 +33,8 @@ export default function Home() {
 
 
     return (
-        <div className="bg-white items-center flex justify-center w-screen h-screen">
-            <div className="bg-gray-400 w-130 flex-col items-center border-black  flex border-2 rounded-2xl h-170">
+        <div className="bg-blue-300 items-center flex justify-center w-screen h-screen">
+            <div className="bg-gray-400 w-130 flex-col items-center border-white border-2  flex border-2 rounded-2xl h-170">
                 <div className=" w-110 flex-col justify-center items-center flex h-50 ml-8 ">
                     <h1 className="font-bold text-5xl text-orange-400">CALCULADORA </h1>
                 </div>
@@ -48,7 +48,7 @@ export default function Home() {
                         <input
                             type="number"
                             placeholder="A"
-                            className="no-spinner outline-none bg-white w-30 h-14  border-2 border-black"
+                            className="no-spinner outline-none bg-white text-black w-30 h-14  border-2 border-black"
                             value={a}
                             onChange={(e) => SetA(e.target.value)}
                         >
@@ -60,7 +60,7 @@ export default function Home() {
                         <input
                             type="number"
                             placeholder="B"
-                            className="bg-white w-30 h-14 border-2
+                            className="bg-white text-black w-30 h-14 border-2
                            border-black"
                             value={b}
                             onChange={(e) => SetB(e.target.value)}
@@ -73,7 +73,7 @@ export default function Home() {
                         <input
                             type="number"
                             placeholder="C"
-                            className="bg-white w-30 h-14  border-2
+                            className="bg-white text-black w-30 h-14  border-2
                                border-black"
                             value={c}
                             onChange={(e) => SetC(e.target.value)}
@@ -110,8 +110,8 @@ export default function Home() {
 
 
             </div>
-            <div className="bg-white -mt-50 w-100  border-2 justify-center ml-50 rounded-2xl  flex flex-col text-2xl">
-                <h1>Resultado: {resultado}</h1>
+            <div className="bg-white text-black -mt-145 w-100  border-2 justify-center ml-50 rounded-2xl  flex flex-col text-2xl">
+                <h1 >Resultado: {resultado}</h1>
 
 
 
