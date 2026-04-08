@@ -12,7 +12,7 @@ export default function Home() {
     const [resultado, SetResultado] = useState("");
 
     function total() {
-        const soma =  2026 - parseFloat(idade) ;
+        const soma = 2026 - parseFloat(idade);
         SetResultado(soma);
 
     }
@@ -31,8 +31,8 @@ export default function Home() {
 
 
     return (
-        <div className="bg-white items-center flex justify-center w-screen h-screen">
-            <div className="bg-gray-400 w-130 flex-col items-center border-black  flex border-2 rounded-2xl h-170">
+        <div className="bg-black flex-col items-center flex justify-center w-screen h-screen">
+            <div className="bg-gray-400 w-130 flex-col items-center border-black  flex border-2 rounded-2xl h-120">
                 <div className=" w-110 flex-col justify-center items-center flex h-50 ml-8 ">
                     <h1 className="font-bold text-5xl text-orange-400">SUA IDADE</h1>
                 </div>
@@ -43,7 +43,7 @@ export default function Home() {
                         <input
                             type="number"
                             placeholder="Digite o ano : "
-                            className="no-spinner outline-none bg-white w-55 h-14  border-2 border-black"
+                            className="no-spinner outline-none bg-white text-black w-55 h-14  border-2 border-black"
                             value={idade}
                             onChange={(e) => SetIdade(e.target.value)} >
                         </input>
@@ -53,7 +53,7 @@ export default function Home() {
                 <button
                     onClick={total}
                     className=" bg-blue-500 hover:bg-blue-700 border-2 border-gray-500 text-white w-120 h-14 mt-5 ">
-                    <h1>SOMAR</h1>
+                    <h1>RESULTADO</h1>
                 </button>
 
                 <button onClick={limparFormulario} className=" bg-yellow-300 hover:bg-yellow-500 border-2 border-gray-500 text-white w-120 h-14 mt-5 ">
@@ -62,19 +62,15 @@ export default function Home() {
 
 
 
-                <Link href={"/"} >
+                <Link href={"/principal"} >
                     <div className=" font-bold text-xs items-center flex justify-center mt-2">
                         <h1>VOLTA PARA O MENU PRINCIPAL</h1>
                     </div>
                 </Link>
-
-
-
-
-
             </div>
-            <div className="bg-white -mt-50 w-100  border-2 justify-center ml-50 rounded-2xl  flex flex-col text-2xl">
-                <h1>Resultado: {resultado}</h1>
+
+             <div className="bg-white text-black  w-130 mt-5  border-2 justify-center  rounded-2xl  flex flex-col text-2xl">
+                    <h1>Resultado: {resultado}</h1>
 
 
 
