@@ -2,12 +2,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
- 
- 
- 
- 
+
+
 export default function Home() {
- 
+
+
     return (
         <div className="bg-white items-center  grid grid-col md:grid-cols-2  justify-center w-screen h-screen">
             <div className="bg-white h-screen flex justify-center items-center">
@@ -27,6 +26,7 @@ export default function Home() {
                     <div className="  text-2xl  font-bold h-20">
                         <div className="">
                             <h1>User</h1>
+
                             <input className="bg-white p-2 border-2 w-90 h-12 border-black"></input>
                         </div>
  
@@ -37,6 +37,16 @@ export default function Home() {
                         <Link href={"/principal"}>
                         <button className="bg-green-500 text-white text-xl hover:bg-green-400  w-90 h-10 mt-7 rounded">Entrar</button>
                         </Link>
+
+                            <input className="bg-white border-2 w-90 h-12 border-black"></input>
+                        </div>
+
+                        <div className="mt-7">
+                            <h1>Password</h1>
+                            <input type="password" className="bg-white border-2 h-12 w-90   border-black"></input>
+                        </div>
+                        <button className="bg-green-500 text-white text-xl hover:bg-green-400  w-90 h-10 mt-7 rounded">Entrar</button>
+
                     </div>
                 </div>
                 <div className="text-black justify-center flex flex-col items-center w-110 h-20 mt-1">
@@ -44,7 +54,9 @@ export default function Home() {
                     <p>Todos os direitos reservados</p>
                 </div>
             </div>
- 
-        </div>
+
+
+      
     );
 }
+
