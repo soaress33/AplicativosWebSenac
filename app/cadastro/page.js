@@ -13,6 +13,7 @@ export default function Home() {
 
     const cadastrarAluno = () => {
         if (!nome || !email || !telefone || !cidade || !idade) return;
+        
 
         const novoAluno = {
             nome,
@@ -37,13 +38,13 @@ export default function Home() {
     };
 
     return (
-        <div className="bg-white items-center flex flex-col justify-center w-screen h-screen">
-            <div className="w-130 flex-col items-center border-black flex border-2 rounded-2xl h-170">
+        <div className="bg-black items-center flex flex-col justify-center w-screen h-screen">
+            <div className="w-130 flex-col items-center bg-amber-50 border-black flex border-2 rounded-2xl h-170">
                 <div className="w-110 flex-col justify-center items-center flex h-50 ml-8">
                     <h1 className="font-bold text-5xl text-orange-400">Cadastro</h1>
                 </div>
 
-                <div className="">
+                <div className="text-black">
                     <div className="w-90 font-bold me-30">
                         <input
                             placeholder="Nome"
@@ -117,7 +118,7 @@ export default function Home() {
                 Alunos cadastrados: {alunos.length}
             </div>
 
-            <div className="bg-white mt-5 w-130 border-2 justify-center rounded-2xl flex flex-col text-2xl p-4">
+            <div className="bg-black border-white mt-5 w-130 border-2 justify-center rounded-2xl flex flex-col text-2xl p-4">
                 <div className="text-center text-2xl font-bold">
                     <h1>Dados Atuais</h1>
                 </div>
