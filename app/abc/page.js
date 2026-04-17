@@ -34,7 +34,7 @@ export default function Home() {
 
     return (
         <div className="bg-blue-300 items-center flex justify-center w-screen h-screen">
-            <div className="bg-gray-400 w-130 flex-col items-center border-white border-2  flex border-2 rounded-2xl h-170">
+            <div className="bg-gray-400 w-130 flex-col items-center border-white   flex border-2 rounded-2xl h-170">
                 <div className=" w-110 flex-col justify-center items-center flex h-50 ml-8 ">
                     <h1 className="font-bold text-5xl text-orange-400">CALCULADORA </h1>
                 </div>
