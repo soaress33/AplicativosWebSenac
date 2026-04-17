@@ -6,13 +6,13 @@ import { LucideClipboardList } from "lucide-react";
 
 export default function Home() {
 
-    const [alunos, setAlunos] = useState([]);
-    const [nome, setNome] = useState("");
-    const [email, setEmail] = useState("");
-    const [celular, setCelular] = useState("");
-    const [curso, setCurso] = useState("");
+   // const [alunos, setAlunos] = useState([]);
+   // const [nome, setNome] = useState("");
+   // const [email, setEmail] = useState("");
+   // const [celular, setCelular] = useState("");
+    ///const [curso, setCurso] = useState("");
 
-    const [editIndex, setEditIndex] = useState(null);
+   ;//; const [editIndex, setEditIndex] = useState(null);
     
 
 
